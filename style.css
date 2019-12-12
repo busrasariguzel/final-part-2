@@ -5,13 +5,16 @@ background: pink
 #app {
 display: grid;
     grid-template-rows: 20% 30% 30% 20%;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 30% 30% 20%;
     grid-template-areas: 
     "hdr hdr hdr hr"
     "cn1 cn2 cn3 nav"
-    "nav ar2 ads nav"
-    "ftr ftr ftr nav"
+    "cn1 cn2 cn3 nav"
+    "ftr ftr ftr ftr"
 ;
-
-        height: 100vh;
+height: 100vh;
+}
+#header {
+grid-area: hdr;
+font: 40px;
 }
