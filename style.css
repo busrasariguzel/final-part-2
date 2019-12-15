@@ -1,5 +1,23 @@
 * {
-background: pink
+background: pink;
+font-family: "Times New Roman", Times, serif;
+animation-name: example;
+animation-duration: 8s;
+
+}
+@keyframes example {
+    from {background-color: pink;}
+    to {background-color: palevioletred;}
+}
+p{
+    color: purple;
+}
+.button:hover{
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input {
+resize: both;
+overflow: auto;
 }
 
 #app {
@@ -12,7 +30,7 @@ display: grid;
     "mn1 mn1 mn1 nav"
     "ftr ftr ftr ftr"
 ;
-height: 100vh;
+height: 200vh;
 }
 #label {
 font-size: 13px;
@@ -23,12 +41,36 @@ font-size: 13px;
 #label-3 {
 font-size: 13px;
 }
+#first-section{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+#main-1{
+    border: rebeccapurple 0.5px solid;
+}
 
 #symptoms {
 font-size: 15px;
+font-style: italic;
+}
+#label {
+    font-style: italic;
+    text-decoration: underline;
+    color: black;
+
+}
+input[type=text] {
+    border: 2px solid purple;
+    border-radius: 4px;
+}
+#label-4{
+font-size: 12px;
+font-style: italic;
 }
 #symptoms-2 {
 font-size: 13px;
+font-style: italic;
 
 }
 ul li:nth-child(odd) {
@@ -51,7 +93,7 @@ text-align: center;
 
 #main {
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: space-evenly;
 grid-area: mn1;
 font: 40px;

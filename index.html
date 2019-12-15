@@ -13,7 +13,53 @@
         </div>
         
         <div id="main">
+    <div id="first-section">
+            <div id="selectable-main">
+                <div>
+            <p>Step 1.</p>  <div>
+            <form action="https://www.google.com/search?q=kristal%20eczanesi&oq=kristal+eczanesi&aqs=chrome.0.69i59l3j0l3j69i60l2.2444j0j7&sourceid=chrome&ie=UTF-8&npsic=0&rflfq=1&rlha=0&rllag=41033065,28980539,12466&tbm=lcl&rldimm=11065891571991797837&lqi=ChBrcmlzdGFsIGVjemFuZXNpWhQKACIQa3Jpc3RhbCBlY3phbmVzaQ&ved=2ahUKEwi1pZGAjrjmAhWOT98KHXYTCoQQvS4wAXoECAsQKw&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:10&rlst=f#rlfi=hd:;si:11065891571991797837,l,ChBrcmlzdGFsIGVjemFuZXNpWhQKACIQa3Jpc3RhbCBlY3phbmVzaQ;mv:[[41.1076811,29.1167092],[40.9584501,28.808404000000003]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:10">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstname" placeholder="Your name..">
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastname" placeholder="Your last name..">
+                <br>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                <option value="USA">USA</option>
+                <option value="canada">Canada</option>
+                <option value="turkey">Turkey</option>
+                <option value="usa">Europe</option>
+                </select>
+                <input type="submit" value="Submit" class='button'>
+            </form>
+    </div>
+<br>
+                <p>Step 2.</p>
+                <select>
+                
+                    <option value="0">Select your gender</option>
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>
+                    </select>
+                    <br>
+                    <select>
+                    <option value="0">Select your insurance company</option>
+                    <option value="1">UnitedHealth Group</option>
+                    <option value="2">Anthem</option>
+                    <option value="2">Aetna</option>
+                    <option value="3">Cigna</option>
+                    <option value="4">Humana</option>
+                    <option value="5">Wellpoint Inc</option>
+                    <option value="6">Highmark</option>
+                    </select>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+
             <div id ='main-1'>
+                <p>Step 3.</p>
             <label id='label'>Select all the symptoms you have</label><br>
             <ul id="symptoms">
                 <li>Headache</li>
@@ -24,14 +70,21 @@
                 <li>idk</li>
             </ul>
             </div>
+            
             <div id ='main-2'>
+                    <p>Step 4.</p>
                 <label id='label-2'> Please add any additional symptoms you have</label><br>
                 <input id="input" type="text" name="input"></input>
-                <button id="add-button">ADD</button><br>
-                <button id="remove-button">REMOVE</button>
-                <button id="remove-all-button">REMOVE ALL</button>
+                <button id="add-button" class='button'>ADD</button><br>
+                <button id="remove-button" class='button'>REMOVE</button>
+                <button id="remove-all-button" class='button'>REMOVE ALL</button>
+                <br> <br>
+                
             </div>
+    </div>
+    <div id='second-section'>
             <div id ='main-3'>
+                <p>Step 5.</p>
                 <label id='label-3'>Select if applies to you</label> <br>
                 <ul id="symptoms-2">
                     <li>I am not drinking enough water</li>
@@ -40,9 +93,14 @@
                     <li>I sleep less than 7 hours per day</li>
                     <li>I have symptoms of depression</li>
                     <li>I haven't seen any doctor since last year</li>
+                    
             </ul>
+            <label id='label-4'> Add more</label><br>
+                <input id="input-2" type="text" name="input"></input>
+                <button id="add-button-2" class='button'>ADD</button><br>
             </div>
         </div>
+    </div>
         <div id='nav'>
             <div id="home">Home</div>
             <div id="about">About</div>

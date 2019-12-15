@@ -30,6 +30,7 @@ event.target.classList.toggle('yes')
 })
 
 
+
 document.querySelector('#remove-button').addEventListener('click', function(event) {
 const theWholeList = document.querySelectorAll(".yes")
 for (const item of theWholeList) {
@@ -38,3 +39,15 @@ item.addEventListener('click', function(event) {
 })
 }
 })
+//  SECOND LIST FUNCTIONS #####
+
+document.querySelector('#symptoms-2').addEventListener('click', function(event) {
+    // event.target.style.textDecoration = 'line-through'
+    event.target.classList.toggle('yes')
+    })
+document.querySelector("#add-button-2").addEventListener('click', function(){
+list = document.querySelector('#symptoms-2')
+newLi = document.createElement('li')
+symptomsList2 = document.querySelector('#input-2').value
+document.querySelector('#symptoms-2').appendChild(newLi).innerText = symptomsList2
+        })
