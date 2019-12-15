@@ -38,7 +38,7 @@ button {
 display: grid;
 flex-direction: column;
 grid-template-rows: 15% 40% 35% 10%;
-grid-template-columns: 20% 35% 40% 5%;
+grid-template-columns: 20% 40% 33% 7%;
 grid-template-areas: 
     "hdr hdr hdr hdr"
     "mn1 mn1 mn1 nav"
@@ -145,7 +145,9 @@ background: #888;
 color: #fff;
 text-decoration: line-through;
 }
-
+ul li.yes remove:before{
+display: none;
+    }
 #symptoms-2 li.yes:before{
 content: "\2713";
 background: #888;
