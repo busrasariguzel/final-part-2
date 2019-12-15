@@ -5,16 +5,71 @@ background: pink
 #app {
 display: grid;
     grid-template-rows: 20% 30% 30% 20%;
-    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-columns: 20% 30% 40% 10%;
     grid-template-areas: 
-    "hdr hdr hdr hr"
-    "cn1 cn2 cn3 nav"
-    "cn1 cn2 cn3 nav"
+    "hdr hdr hdr hdr"
+    "mn1 mn1 mn1 nav"
+    "mn1 mn1 mn1 nav"
     "ftr ftr ftr ftr"
 ;
 height: 100vh;
 }
+#label {
+    font-size: 13px;
+}
+
+#symptoms {
+    font-size: 18px;
+    
+
+}
+ul li:nth-child(odd) {
+    background:rebeccapurple;
+}
+ul li:hover {
+    background: lightgray;
+    opacity: 0.5;
+}
 #header {
 grid-area: hdr;
+font-size: 40px;
+text-shadow: 2px 2px rebeccapurple;
+border-bottom: rebeccapurple 1px solid;
+text-align: center;
+}
+
+#main {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+grid-area: mn1;
 font: 40px;
 }
+#footer {
+grid-area: ftr;
+font: 40px;
+border-top:rebeccapurple 1px solid;
+
+}
+
+#add-button:hover {
+opacity: 0.5;
+}
+#nav{
+display: flex;
+flex-direction: column;
+justify-content: space-between; 
+grid-area:nav;
+text-align: right;
+border-left: rebeccapurple 1px solid;
+}
+ul li.yes{
+
+background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+ul li.yes.remove{
+
+display: none
+    }
