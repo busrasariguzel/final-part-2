@@ -16,7 +16,7 @@ p{
     color: purple;
 }
 img {
-
+padding-right: 0px;
 border-radius: 50%;
 }
 .button:hover{
