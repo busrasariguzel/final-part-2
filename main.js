@@ -33,8 +33,8 @@ event.target.classList.toggle('yes')
 document.querySelector('#remove-button').addEventListener('click', function(event) {
 const theWholeList = document.querySelectorAll(".yes")
 for (const item of theWholeList) {
-  item.addEventListener('click', function(event) {
+item.addEventListener('click', function(event) {
     event.target.classList.add('remove')
-  })
+})
 }
 })

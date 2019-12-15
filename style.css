@@ -15,16 +15,24 @@ display: grid;
 height: 100vh;
 }
 #label {
-    font-size: 13px;
+font-size: 13px;
+}
+#label-2 {
+font-size: 13px;
+}
+#label-3 {
+font-size: 13px;
 }
 
 #symptoms {
-    font-size: 18px;
-    
+font-size: 15px;
+}
+#symptoms-2 {
+font-size: 13px;
 
 }
 ul li:nth-child(odd) {
-    background:rebeccapurple;
+background: rgb(251, 224, 228)
 }
 ul li:hover {
     background: lightgray;
@@ -55,6 +63,9 @@ border-top:rebeccapurple 1px solid;
 #add-button:hover {
 opacity: 0.5;
 }
+ul{ 
+    list-style-type: none;
+}
 #nav{
 display: flex;
 flex-direction: column;
@@ -63,13 +74,14 @@ grid-area:nav;
 text-align: right;
 border-left: rebeccapurple 1px solid;
 }
-ul li.yes{
+ul li.yes:before{
+content: "\2713";
 
 background: #888;
-  color: #fff;
-  text-decoration: line-through;
+color: #fff;
+text-decoration: line-through;
 }
 ul li.yes.remove{
 
 display: none
-    }
+}
