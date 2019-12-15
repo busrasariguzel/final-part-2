@@ -34,6 +34,9 @@ font-size: 13px;
 ul li:nth-child(odd) {
 background: rgb(251, 224, 228)
 }
+#symptoms-2 li:nth-child(odd) {
+    background: lightgray;
+    }
 ul li:hover {
     background: lightgray;
     opacity: 0.5;
@@ -64,7 +67,7 @@ border-top:rebeccapurple 1px solid;
 opacity: 0.5;
 }
 ul{ 
-    list-style-type: none;
+list-style-type: none;
 }
 #nav{
 display: flex;
@@ -81,6 +84,13 @@ background: #888;
 color: #fff;
 text-decoration: line-through;
 }
+#symptoms-2 li.yes:before{
+    content: "\2713";
+    
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+    }
 ul li.yes.remove{
 
 display: none
