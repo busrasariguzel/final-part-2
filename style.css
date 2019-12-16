@@ -52,15 +52,22 @@
         "ftr ftr ftr ftr"
     ;
     height: 200vh;
+    font-size: 30px;
     }
     #label {
-    font-size: 13px;
+    font-size: 25px;
+    font-style: italic;
+    color: rebeccapurple
     }
     #label-2 {
-    font-size: 13px;
+    font-size: 25px;
+    font-style: italic;
+    color: rebeccapurple;
     }
     #label-3 {
-    font-size: 13px;
+    font-size: 25px;
+    font-style: italic;
+    color: rebeccapurple;
     }
     #first-section{
     display: flex;
@@ -69,21 +76,19 @@
     }
     
     #symptoms {
-    font-size: 15px;
+    font-size: 20px;
     font-style: italic;
     
     }
     label{
-    font-size: 13px;
+    font-size: 20px;
+    font-style: italic;
+    color: rebeccapurple;
     }
     input:hover{
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     }
-    #label {
     
-        color: black;
-    
-    }
     input[type=text] {
     border: 2px solid purple;
     border-radius: 4px;
@@ -93,7 +98,7 @@
     font-style: italic;
     }
     #symptoms-2 {
-    font-size: 13px;
+    font-size: 20px;
     font-style: italic;
     
     }
@@ -110,7 +115,7 @@
     }
     #header {
     grid-area: hdr;
-    font-size: 20px;
+    font-size: 50px;
     text-shadow: 2px 2px rebeccapurple;
     border-bottom: rebeccapurple 1px solid;
     text-align: center;
@@ -147,6 +152,7 @@
     grid-area:nav;
     text-align: right;
     border-left: rebeccapurple 1px solid;
+    color: purple;
     
     }
     #symptoms li.yes:before{
@@ -236,7 +242,7 @@
             font: 10px;
             }
         }
-@media (min-width: 500px) and (max-width : 768px) {
+@media (min-width: 380px) and (max-width : 780px) {
     #app {
     display: grid;
     flex-direction: row;
