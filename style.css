@@ -227,6 +227,10 @@
         "ftr"
         ;
         height: 200vh;
+        font: 13px;
+        }
+        #main {
+            font: 13px;
         }
         #first-section{
             display: flex;
