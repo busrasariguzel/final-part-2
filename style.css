@@ -191,3 +191,30 @@ to {
 text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
 }
+
+@media (max-width: 375px) {
+#app {
+display: grid;
+flex-direction: row;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(9, 1fr); 
+grid-template-areas: 
+    "hdr"
+    "mn1"
+    "mn1"
+    "mn1"
+    "mn1" 
+    "mn1"
+    "nav"
+    "nav" 
+    "ftr"
+;
+height: 200vh;
+}
+#first-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+
+}
