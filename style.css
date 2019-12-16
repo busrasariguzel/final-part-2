@@ -196,8 +196,9 @@ text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6
 #app {
 display: grid;
 flex-direction: row;
+align-items:stretch;
 grid-template-columns: repeat(1, 1fr);
-grid-template-rows: repeat(9, 1fr); 
+grid-template-rows: repeat(11, 1fr); 
 grid-template-areas: 
     "hdr"
     "mn1"
@@ -205,16 +206,67 @@ grid-template-areas:
     "mn1"
     "mn1" 
     "mn1"
+    "mn1"
+    "mn1"
+    "mn1"
     "nav"
-    "nav" 
     "ftr"
 ;
 height: 200vh;
 }
+#main{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
 #first-section{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+#nav{
+display: flex;
+flex-direction: row;
+border: none;
+height:2px;
+font: 10px;
+}
+}
+
+@media (min-width: 500px) and (max-width : 800px) {
+#app {
+display: grid;
+flex-direction: row;
+align-items:stretch;
+/* grid-template-rows: 15% 5% 40% 35% 5%; */
+grid-template-rows: repeat(10, 1fr); 
+grid-template-columns: repeat(3, 1fr); 
+grid-template-areas: 
+    "hdr hdr hdr"
+    "nav nav nav"
+    "mn1 mn1 mn1"
+    "mn1 mn1 mn1"
+    "mn1 mn1 mn1"
+    "mn1 mn1 mn1"
+    "mn1 mn1 mn1"
+    "mn1 mn1 mn1"
+    "mn1 mn1 mn1"
+    "ftr ftr ftr"
+;
+height: 120vh;
+}
+
+#main{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    height:70vh;
     }
-
+#nav{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    font: 10px;
+    }
 }
