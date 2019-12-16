@@ -84,6 +84,9 @@ document.querySelector('#symptoms-2').appendChild(newLi).innerText = symptomsLis
 
 ````
 
+## `Theme`
+
+* For the theme, I decided to have a pinky colors. I tried to have similar colors in each part of the website. I added glows to some of the text including the title. I added 2 gifs next to the title. 
 
 
 

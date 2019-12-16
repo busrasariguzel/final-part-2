@@ -25,7 +25,7 @@ item.classList.add('remove')
 //  SECOND LIST FUNCTIONS #####
 
 document.querySelector('#symptoms-2').addEventListener('click', function(event) {
-    // event.target.style.textDecoration = 'line-through'
+    event.target.style.textDecoration = 'line-through'
     event.target.classList.toggle('yes')
     })
 document.querySelector("#add-button-2").addEventListener('click', function(){

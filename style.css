@@ -1,321 +1,238 @@
 * {
-box-sizing: border-box;
-background: pink;
-font-family: "Times New Roman", Times, serif;
-animation-name: pinky;
-animation-duration: 3s;
-}
-#app {
-display: grid;
-flex-direction: column;
-grid-template-rows: 15% 40% 35% 10%;
-grid-template-columns: 20% 40% 33% 7%;
-grid-template-areas: 
-    "hdr hdr hdr hdr"
-    "mn1 mn1 mn1 nav"
-    "mn1 mn1 mn1 nav"
-    "ftr ftr ftr ftr"
-;
-height: 200vh;
-}
-#since {
-font-size: 11px;
-text-align: center;
-font-style: italic;
-color: purple;
-
-}
-/* #main:hover{
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
-} */
-@keyframes pinky {
-from {background-color: pink;}
-to {background-color: rgb(223, 160, 181);}
-}
-p{
-color: purple;
-font-size: 11px;
-}
-img {
-padding-right: 0px;
-border-radius: 50%;
-}
-.button:hover{
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-input {
-resize: both;
-overflow: auto;
-}
-button {
-resize: both;
-overflow: auto;
-}
-#label {
-font-size: 13px;
-}
-#label-2 {
-font-size: 13px;
-}
-#label-3 {
-font-size: 13px;
-}
-#first-section{
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-}
-
-#symptoms {
-font-size: 15px;
-font-style: italic;
-
-}
-label{
-font-size: 13px;
-}
-input:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#label {
-
-    color: black;
-
-}
-input[type=text] {
-border: 2px solid purple;
-border-radius: 4px;
-}
-#label-4{
-font-size: 12px;
-font-style: italic;
-}
-#symptoms-2 {
-font-size: 13px;
-font-style: italic;
-
-}
-ul li:nth-child(odd) {
-background: rgb(251, 224, 228)
-}
-#symptoms-2 li:nth-child(odd) {
-background: lightgray;
-}
-ul li:hover {
-    background: lightgray;
-    opacity: 0.5;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#header {
-grid-area: hdr;
-font-size: 30px;
-text-shadow: 2px 2px rebeccapurple;
-border-bottom: rebeccapurple 1px solid;
-text-align: center;
-}
-
-#main {
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-grid-area: mn1;
-font: 40px;
-}
-#footer {
-display: flex;
-grid-area: ftr;
-font: 40px;
-border-top:rebeccapurple 1px solid;
-}
-
-#add-button:hover {
-opacity: 0.5;
-}
-ul{ 
-list-style-type: none;
-}
-#nav{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly; 
-grid-area:nav;
-text-align: right;
-border-left: rebeccapurple 1px solid;
-
-}
-ul li.yes:before{
-content: "\2713";
-background: #888;
-color: #fff;
-text-decoration: line-through;
-}
-ul li.yes remove:before{
-display: none;
-    }
-#symptoms-2 li.yes:before{
-content: "\2713";
-background: #888;
-color: #fff;
-text-decoration: line-through;
-}
-ul li.yes.remove{
-
-display: none
-}
-
-#title {
-    font-size: 50px;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-p {
-    font-size: 16px;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+    box-sizing: border-box;
     background: pink;
-}
-
-@-webkit-keyframes glow {
-from {
-text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-}
-to {
-text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    font-family: "Times New Roman", Times, serif;
+    animation-name: pinky;
+    animation-duration: 3s;
+    
+    
     }
-}
-@media (min-width : 501px) and (max-width:800px) { 
-#app {
-display: grid;
-flex-direction: row;
-align-items:stretch;
-/* grid-template-rows: 15% 5% 40% 35% 5%; */
-grid-template-rows: repeat(10, 1fr); 
-grid-template-columns: repeat(3, 1fr); 
-grid-template-areas: 
-    "hdr hdr hdr"
-    "nav nav nav"
-    "mn1 mn1 mn1"
-    "mn1 mn1 mn1"
-    "mn1 mn1 mn1"
-    "mn1 mn1 mn1"
-    "mn1 mn1 mn1"
-    "mn1 mn1 mn1"
-    "mn1 mn1 mn1"
-    "ftr ftr ftr"
-;
-height: 100vh;
-}
-
-#main{
+    #since {
+    font-size: 11px;
+    text-align: center;
+    font-style: italic;
+    color: purple;
+    
+    }
+    /* #main:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+    } */
+    @keyframes pinky {
+    from {background-color: pink;}
+    to {background-color: rgb(223, 160, 181);}
+    }
+    p{
+    color: purple;
+    font-size: 11px;
+    }
+    img {
+    padding-right: 0px;
+    border-radius: 50%;
+    }
+    .button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    input {
+    resize: both;
+    overflow: auto;
+    }
+    button {
+        resize: both;
+        overflow: auto;
+        }
+    
+    #app {
+    display: grid;
+    flex-direction: column;
+    grid-template-rows: 15% 40% 35% 10%;
+    grid-template-columns: 20% 40% 33% 7%;
+    grid-template-areas: 
+        "hdr hdr hdr hdr"
+        "mn1 mn1 mn1 nav"
+        "mn1 mn1 mn1 nav"
+        "ftr ftr ftr ftr"
+    ;
+    height: 200vh;
+    }
+    #label {
+    font-size: 13px;
+    }
+    #label-2 {
+    font-size: 13px;
+    }
+    #label-3 {
+    font-size: 13px;
+    }
+    #first-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+    
+    #symptoms {
+    font-size: 15px;
+    font-style: italic;
+    
+    }
+    label{
+    font-size: 13px;
+    }
+    input:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    #label {
+    
+        color: black;
+    
+    }
+    input[type=text] {
+    border: 2px solid purple;
+    border-radius: 4px;
+    }
+    #label-4{
+    font-size: 12px;
+    font-style: italic;
+    }
+    #symptoms-2 {
+    font-size: 13px;
+    font-style: italic;
+    
+    }
+    ul li:nth-child(odd) {
+    background: rgb(251, 224, 228)
+    }
+    #symptoms-2 li:nth-child(odd) {
+    background: lightgray;
+    }
+    ul li:hover {
+        background: lightgray;
+        opacity: 0.5;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    #header {
+    grid-area: hdr;
+    font-size: 20px;
+    text-shadow: 2px 2px rebeccapurple;
+    border-bottom: rebeccapurple 1px solid;
+    text-align: center;
+    }
+    
+    #main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height:70vh;
+    grid-area: mn1;
+    font: 40px;
     }
-#nav{
+    #footer {
+    grid-area: ftr;
+    font: 20px;
+    border-top:rebeccapurple 1px solid;
     display: flex;
     flex-direction: row;
-    border: none;
-    font: 10px;
+    justify-content: space-evenly;
+    font-style: italic;
+    
     }
-label{
-font-size: 18px;
-font-style: italic;
-}
-#symptoms{
-    font-size: 18px;
-    font-style: italic;
-}
-#symptoms-2{
-    font-size: 18px;
-    font-style: italic;
-}
-#label-2, #label, #label-3{
-    font-size: 15px;
-    font-style: italic;
-}
-select{
-    font-size: 15px;
-    font-style: italic;  
-}
-#main{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-#first-section{
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-}
-}
+    
+    #add-button:hover {
+    opacity: 0.5;
+    }
+    ul{ 
+    list-style-type: none;
+    }
+    #nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    grid-area:nav;
+    text-align: right;
+    border-left: rebeccapurple 1px solid;
+    
+    }
+    ul li.yes:before{
+    text-decoration: line-through;
+    content: "\2713";
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+
+    }
+    ul li.yes remove:before{
+    display: none;
+        }
+    #symptoms-2 li.yes:before{
+    content: "\2713";
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+    }
+    ul li.yes.remove{
+    
+    display: none
+    }
+    
+    #title {
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    p {
+        font-size: 16px;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+        background: pink;
+    }
+    
+    @-webkit-keyframes glow {
+    from {
+    text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
 
 
-@media (max-width: 375px) {
-#app {
-display: grid;
-flex-direction: row;
-align-items:stretch;
-font-size: 20px;
-grid-template-columns: repeat(1, 1fr);
-grid-template-rows: repeat(11, 1fr); 
-grid-template-areas: 
-    "hdr"
-    "mn1"
-    "mn1"
-    "mn1"
-    "mn1" 
-    "mn1"
-    "mn1"
-    "mn1"
-    "mn1"
-    "nav"
-    "ftr"
-;
-height: 200vh;
-}
-label{
-font-size: 18px;
-font-style: italic;
-}
-#symptoms{
-    font-size: 18px;
-    font-style: italic;
-}
-#symptoms-2{
-    font-size: 18px;
-    font-style: italic;
-}
-#label-2, #label, #label-3{
-    font-size: 15px;
-    font-style: italic;
-}
-select{
-    font-size: 15px;
-    font-style: italic;  
-}
-#main{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-#first-section{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-}
-
-#nav{
-display: flex;
-flex-direction: row;
-border: none;
-height:2px;
-font: 10px;
-}
-}
-
+    @media (max-width: 375px) {
+        #app {
+        display: grid;
+        flex-direction: row;
+        align-items:stretch;
+        font-size: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-areas:
+        "hdr"
+        "mn1"
+        "mn1"
+        "mn1"
+        "mn1"
+        "mn1"
+        "mn1"
+        "mn1"
+        "mn1"
+        "nav"
+        "ftr"
+        ;
+        height: 200vh;
+        }
+        #first-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            }
+            
+            #nav{
+            display: flex;
+            flex-direction: row;
+            border: none;
+            height:2px;
+            font: 10px;
+            }
+        }
