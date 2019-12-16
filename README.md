@@ -1,48 +1,88 @@
 ## `Motivation`
 
-* This project is very special to me because it is a gift to my mother!!! My biggest motivation in life and also in this project is my mother. She has been one of the most successful pharmacists in Turkey for about 30 years. She loves her job and loves to help people. That's why she is very good at her job. In this project, I tried to combine my coding knowledge and love of my mother. I created a website for her pharmacy!
+* This project is very special to me because it is a gift to my mother!!! My biggest motivation in life and also in this project is my mother. She has been one of the most successful pharmacists in Turkey for about 30 years. She loves her job and loves to help people. That's why she is very good at her job. In this project, I tried to combine my coding knowledge and love of my mother. I created a website for her pharmacy! The website is able to have a user interaction and very cute css tools. I am proud of the pink theme I have on the website:)
 
 ## `Challenges`
-* I had a hard time making my photo album responsive. The pictures were getting smaller but they were not changing their locations.
-* I also had hard time figuring out the layout of my album. I was not sure where to put each section. 
-* I struggled with what to write on this readme file but here we are :) 
-* I overcame my challenges by spending more time on the project and trying different things to make it work.
-  
+* I had a hard time making my website responsive. When I added tablet version, my regular desktop version was getting affected. The media query I have for the tablet had something wrong and it took me awhile to understand why.
+* I also struggled with removing the selected items from the list.
+* after spending lots of time on this project I was able to fix some of my mistakes.
+
+
 ## `Goals`
 * My first goal on this project was to create  website to my mother!
-* My second goal is to practice responsive grid and css tools.I tried to have 3 different layouts and that helped me to understand the grids better.
+* My second goal is to practice everything I learned in coding. I tried to add new stuff by using css. 
+* I used new tools that I have never used before and I was more comfortable trying new things. 
+* I tried to have a theme in the website. Making the website work is also very important and that was one of my biggest goals in this project.
+* I also tried to have 3 different layouts and that helped me to understand the grids better.
 
 ## `Code`
 * I mainly used CSS in this project. 
 * I also used javascript to make adding and removing to the already existing list.
 * The code I used for grid areas :
 
-``` 
+```  css
+#app {
+display: grid;
+flex-direction: row;
+align-items:stretch;
+font-size: 20px;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(11, 1fr); 
 grid-template-areas: 
-        "hd01 hd01 hd01 hd01 hd01"
-        "nv01 nv01 nv01 nv01 nv01"
-        "pc01 pc02 pc03 pc04 pc05"
-        "pc06 pc07 pc08 pc09 pc10"
-        "pc11 pc12 pc13 pc14 pc15"
-        "pc16 pc17 pc18 pc19 pc20"
-        "ft01 ft01 ft01 ft01 ft01"
-    ;
+    "hdr"
+    "mn1"
+    "mn1"
+    "mn1"
+    "mn1" 
+    "mn1"
+    "mn1"
+    "mn1"
+    "mn1"
+    "nav"
+    "ftr"
+;
+height: 200vh;
+}
 
-```
-* Layout codes used:
-```@media (min-width : 501px) and (max-width:800px) {
-    
-    #photo-album {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-auto-rows: repeat(8,1fr);
-        grid-auto-flow: dense;
-        height: 100vh;
-        width: 100%;
-        border: black solid;
-        font-size: 18px;
-```
+````
 
+
+* part of the code I have to add and remove items from the list:
+
+```Javascript
+document.querySelector("#add-button").addEventListener('click', function(){
+list = document.querySelector('#symptoms')
+newLi = document.createElement('li')
+symptomsList = document.querySelector('#input').value
+document.querySelector('#symptoms').appendChild(newLi).innerText = symptomsList 
+})
+
+document.querySelector('#symptoms').addEventListener('click', function(event) {
+event.target.classList.toggle('yes')
+})
+
+document.querySelector('#remove-button').addEventListener('click', function(event) {
+const theWholeList = document.querySelectorAll(".yes")
+for (const item of theWholeList) {
+item.classList.add('remove')
+}
+})
+````
+
+```` Javascript
+
+document.querySelector('#symptoms-2').addEventListener('click', function(event) {
+    // event.target.style.textDecoration = 'line-through'
+    event.target.classList.toggle('yes')
+    })
+document.querySelector("#add-button-2").addEventListener('click', function(){
+list = document.querySelector('#symptoms-2')
+newLi = document.createElement('li')
+symptomsList2 = document.querySelector('#input-2').value
+document.querySelector('#symptoms-2').appendChild(newLi).innerText = symptomsList2
+})
+
+````
 
 
 
