@@ -12,7 +12,6 @@
     text-align: center;
     font-style: italic;
     color: purple;
-    
     }
     /* #main:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
@@ -150,7 +149,7 @@
     border-left: rebeccapurple 1px solid;
     
     }
-    ul li.yes:before{
+    #symptoms li.yes:before{
     text-decoration: line-through;
     content: "\2713";
     background: #888;
@@ -160,7 +159,8 @@
     }
     ul li.yes remove:before{
     display: none;
-        }
+    }
+
     #symptoms-2 li.yes:before{
     content: "\2713";
     background: #888;
@@ -236,3 +236,33 @@
             font: 10px;
             }
         }
+@media (min-width: 500px) and (max-width : 768px) {
+    #app {
+    display: grid;
+    flex-direction: row;
+    align-items:stretch;
+    /* grid-template-rows: 15% 5% 40% 35% 5%; */
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "hdr hdr hdr"
+        "nav nav nav"
+        "mn1 mn1 mn1"
+        "mn1 mn1 mn1"
+        "mn1 mn1 mn1"
+        "mn1 mn1 mn1"
+        "mn1 mn1 mn1"
+        "mn1 mn1 mn1"
+        "mn1 mn1 mn1"
+        "ftr ftr ftr"
+    ;
+    height: 200vh;
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    height:2px;
+    font: 10px;
+    }
+}
